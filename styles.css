@@ -1,0 +1,236 @@
+/*criando variavel no css*/
+:root{
+    --branco-principal: #ffffff;/*variável*/
+    --cinza-secundario:#c0c0c0;/*variável*/
+    --botao-azul: #993399;/*variável*/
+    --cor-de-fundo:#993399;/*variável*/
+    --fonte-principal: 'Inter';/*variável*/
+}
+
+body{
+    background-color: var(--cor-de-fundo);/*colocando cor de fundo, utilizando a variável*/
+    color: var(--branco-principal);/*colocando cor, utilizandi a variável*/
+    font-family:var(--fonte-principal);/*colocando fonte na letra, ulizando a variável*/
+    font-size: 15px;/*definindo o tamanho da fonte*/
+    font-weight: 400;/**/
+}
+
+header .container-header {
+    width: 1200px;/*lagura*/
+    max-width: 100%;/*lagura máxima*/
+    margin: 0 auto;/*mangem automatica*/
+    display: flex;/*ativando boostrap*/
+    justify-content: space-between;/* Cria um espaçamento igual entre os elementos*/
+    align-items: center;/*alinhando objeto no centro*/
+}
+header {
+    background-color: var(--cor-de-fundo);/*colocando cor de fundo, utilizando a variável*/
+}
+
+header .logo {
+    text-align: left;/*alinhando o texto para a esquerda*/
+}
+
+header .menu {
+    text-align: center;/*alinhando o texto para o centro*/
+}
+
+header .menu ul {
+    list-style: none;/**/
+    padding: 0;/**/
+    margin: 0;/**/
+}
+
+header .menu ul li {
+    display: inline-block;/**/
+    padding: 5px 15px;/**/
+    font-family: Raleway;/**/
+    font-size: 12px;/*defindo tamanho da fonte*/
+    font-weight: 700;/**/
+    letter-spacing: 0em;/**/
+    text-align: left;/*alinhando texto para esquerda*/
+}
+
+header .menu ul li a {
+    text-decoration: none;/**/
+    color: #fff;/*adcionando cor*/
+}
+* {
+    margin: 0;/*adicionando margin*/
+    padding: 0;/**/
+}
+
+.principal{
+    background-image: url("imagens/Tecnologia.png");/*colocando imagem de fundo*/
+    background-repeat: no-repeat;/*não repete*/
+    background-size: contain;/*tamanho de fundo*/
+    align-items: center;/*alinha objeto no centro*/
+    text-align: center;/* centraliza texto*/
+
+}
+.container{
+    height: 100vh;/*considera uso da página inteira*/
+    display: grid;/*ativando ..*/
+    grid-template-columns: 50% 50%; /**/
+    margin: 0;/*margem 0 */
+
+}
+.container__botao{
+    background-color: var(--botao-azul);/**/
+    border-radius: 5px;/*espessura da borda*/
+    padding: 1rem;/**/
+    color: var(--branco-principal);/**/
+    display: block;/**/
+    text-decoration: none;/**/
+    margin-bottom: 1em ;/*colocar espaçamento*/
+}
+.botao_secundario{
+    background-color:transparent;/*cor de fundo transparente*/
+    border: 2px solid var(--branco-principal);/*borda, tamanho da bora */
+}
+.container__aviso{
+    font-size: 18px;/*tamanho da fonte*/
+    color: var(--branco-principal);/*colocando cor da variável*/
+}
+.container__titulo{
+    font-size: 28px;/*tamanho da fonte*/
+    font-weight: 700;   /**/ 
+}
+.container__imagem{
+    margin:1em 0 2em 0;/**/
+}
+.container__caixa{
+    margin: 0 6em;/**/
+}
+/*existem digerentes modos de colocar margem no objeto, dependendo do número de valores*/
+/*Ex: margin: 0 6em; margin:1em 0 2em 0;*/
+
+.secundario__imagem{
+    width: 90%;/**/
+}
+.secundario{
+    align-items:center;/*alinhando objeto no centro*/
+    margin:0 10em;/**/
+}
+.decricao__titulo{
+    font-size: 48px;/**/
+    font-weight: 700;/**/
+    color:var(--branco-principal);/**/
+    margin-bottom: 0.1em;/**/
+}
+.descricao__texto{
+    color:var(--cinza-secundario);/**/
+}
+.secundario__botao{
+    display: inline-block;/**/
+    margin-top: 1em;/**/
+    background-color: #a09898;/*colocando cor de fundo*/
+}
+.container__descricao{
+    padding: 2em;/**/
+}
+.dispositivos__lista{
+    display:flex;/**/
+    justify-content: center;/**/
+    list-style-type: none;/*tirar os pontinhos da lista*/
+    margin: 5em 0;/**/
+}
+.dispositivos{
+    text-align: center;/*alinhando texto ao centro*/
+}
+.dispositivos__titulo{
+    font-size: 48px;/*definindo tamanho de fonte*/
+}
+.lista__item{
+    font-size: 32px;/*definindo tamanho de fonte*/
+    color:var(--branco-principal);/*adicionando cor, e utilizando a variável */
+}
+.rodape {
+    text-align: center;/*alinhando texto ao centro*/
+    margin: 5em 3em;/**/
+}
+.rodape__lista {
+    display: flex;/*acionando o boostrap*/
+    justify-content: center;/**/
+    list-style-type: none;/**/
+    margin-top: 1em;/**/
+}
+
+.lista__link a{
+    text-decoration: none;/**/
+    color: var(--branco-principal);/**/
+    margin-left: 1em;/**/
+}
+
+.rodape__texto {
+    margin: 1em 0;/**/
+    color: var(--cinza-secundario);
+    font-size: 14px;/**/
+}
+/*Página interna assine */
+/*Primeiro contrato interno*/
+.introducaoPlano1.h1{
+    font-size: 70%;/*definindo tamanho da fonte*/
+}
+.formulario{
+    position:absolute;/*definindo que a posição não será mudada, mesmo que haja mudanças de outros objetos */
+    top: 50px;/*defenindo .. */
+    left: 500px;/*direcionando para a esquerda*/
+    width: 200px;/*largura*/
+    height: 450px;/*altura*/
+    display: flex;/*torna o elemento um flex container automaticamente,
+    transformando todos os seus filhos diretos em flex itens*/
+    flex-direction: column-reverse;/*Os itens ficam em uma única coluna, um embaixo do outro,
+    porém em ordem reversa: 3, 2 e 1*/
+    align-items:flex-start;/*alinhando item ..*/
+    border-radius: 5px;/*largura da borda*/
+    box-shadow: 0px 0px 5px 2px #B4B4B4;/**/
+    flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado*/
+    align-content: space-around;/*Cria um espaçamento entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom.*/
+    justify-content: space-evenly;/*cria um espaçamento entre os elementos*/
+    padding: 40px;/*espaçamento interno*/
+}
+.formulario{
+    font-size: 25px;/*tamanho da fonte*/
+}
+.ladel.h2 {
+    margin: auto;/*margem/espaçamento externo automatica*/
+    font-size: 25px;/*tamanho da fonte*/
+    color: #388E3C;/*adicionado cor*/
+    line-height: 46.96px;/* altura*/
+}
+
+.formulario form button:hover {
+    background-color: #ffffff;/*cor de fundo*/
+    border-color: rgb(130, 66, 83);/*cor da borda*/
+    cursor: pointer;/*colocando cursor na borda*/
+    border-radius: 10px;/*colocando borda*/
+}
+
+/*Tornando a página responsiva*/
+@media screen and(max-width: 768px){
+    .container{
+        display:block;/**/
+        background-image: none;/*imagem de fundo..*/
+    }
+    .container__imagem{
+        width: 50vw;/*largura*/
+    }
+    .container__caixa{
+        margin:2em 2em;/*margem*/
+    }
+    .secundario{
+        margin: 0;/*margem*/
+        text-align: center;/*alinhando texto ao centro*/
+    }
+    .secundario__imagem{
+        width: 60vw;/*lagura */
+    }
+    .dispositivos__lista{
+        display:block;/**/
+    }
+    .rodape__lista{
+        display: block;/*acionando ..*/
+    }
+}
+
